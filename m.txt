@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 hey here is m.txt
 
 This Is second line testing
+=======
+hello yeh githun
+>>>>>>> networking
