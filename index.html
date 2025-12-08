@@ -1,6 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabbir G - Find Your Perfect Life Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <h1 class="logo">Shabbir 💍 MIA Khalifa</h1>
+                <p class="tagline">Premium Bed Services</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#brides" class="C:\Users\mohsi\OneDrive\Desktop\TYBCA Project\WhatsApp Image 2025-12-05 at 8.38.57 PM (2).jpeg">Brides</a></li>
+                <li><a href="#grooms" class="nav-link">Grooms</a></li>
+                <li><a href="#success" class="nav-link">Success Stories</a></li>
+                <li><a href="#register" class="nav-link register-btn">Register FREE</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-Adding text "hello mohsin"
-recieiving text from pr
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="main-title">
+                    <span class="title-line umair-text">Shabbir</span>
+                    <span class="title-connector">❤️ ki ❤️</span>
+                    <span class="title-line nafiya-text">property chud gyi::</span>
+                </h1>
+                <p class="hero-subtitle">India's Most Trusted Matrimonial Platform</p>
+                <p class="hero-desc">Join 10 Lakh+ Happy Couples | Verified Profiles | 100% Privacy Guaranteed</p>
+            </div>
 
-pushing features to git repos
+            <div class="search-section">
+                <div class="search-box">
+                    <div class="filter-row">
+                        <select class="filter-input" id="lookingFor">
+                            <option value="">Looking for...</option>
+                            <option value="bride">Bride</option>
+                            <option value="groom">Groom</option>
+                        </select>
+                        <input type="text" class="filter-input" placeholder="Age 21-35" id="ageInput">
+                        <input type="text" class="filter-input" placeholder="Religion, Caste" id="casteInput">
+                        <input type="text" class="filter-input" placeholder="Location" id="locationInput">
+                        <button class="search-hero-btn" onclick="searchProfiles()">🔍 Search Now</button>
+                    </div>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <h3>50L+</h3>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5L+</h3>
+                        <p>Successful Matches</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20K+</h3>
+                        <p>Matches Daily</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Featured Brides Section -->
+    <section class="featured-section" id="brides">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Brides</span></h2>
+                <p class="section-desc">Beautiful & Educated Women Seeking Their Life Partner</p>
+            </div>
+
+            <div class="profiles-grid" id="bridesGrid">
+                <!-- Profiles will be loaded here by JavaScript -->
+            </div>
+
+            <div class="view-all">
+                <button class="btn-view-all" onclick="viewMore('brides')">View 5L+ More Brides →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Grooms Section -->
+    <section class="featured-section grooms-bg" id="grooms">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight-2">Grooms</span></h2>
+                <p class="section-desc">Handsome & Successful Men Ready to Marry</p>
+            </div>
+
+            <div class="profiles-grid" id="groomsGrid">
+                <!-- Profiles will be loaded here by JavaScript -->
+            </div>
+
+            <div class="view-all">
+                <button class="btn-view-all" onclick="viewMore('grooms')">View 3.5L+ More Grooms →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-section" id="success">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Success Stories</span></h2>
+            <p class="section-desc">Real Love Stories from Real Couples</p>
+
+            <div class="stories-grid" id="storiesGrid">
+                <!-- Stories will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="highlight">Umair X Nafiya?</span></h2>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">✅</div>
+                    <h3>100% Verified</h3>
+                    <p>All profiles manually verified by our expert team</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Private</h3>
+                    <p>Your data is completely secure & encrypted</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">👨‍👩‍👧</div>
+                    <h3>50L+ Members</h3>
+                    <p>Largest matrimonial community in South Asia</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">💬</div>
+                    <h3>24/7 Support</h3>
+                    <p>Expert matchmakers to guide your journey</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Matching</h3>
+                    <p>AI-powered algorithm matches your preferences</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Award Winning</h3>
+                    <p>Best Matrimonial Platform 2024 & 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Simple & Transparent <span class="highlight">Pricing</span></h2>
+            <p class="section-desc">Choose the plan that suits you best</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>FREE</h3>
+                    <p class="price">₹0<span>/month</span></p>
+                    <ul class="features-list">
+                        <li>✅ View Profiles</li>
+                        <li>✅ Create Profile</li>
+                        <li>✅ Limited Searches</li>
+                        <li>❌ Message Contacts</li>
+                        <li>❌ Priority Support</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <span class="popular-badge">MOST POPULAR</span>
+                    <h3>PREMIUM</h3>
+                    <p class="price">₹299<span>/month</span></p>
+                    <ul class="features-list">
+                        <li>✅ Unlimited Profiles</li>
+                        <li>✅ Unlimited Searches</li>
+                        <li>✅ Unlimited Messages</li>
+                        <li>✅ Video Profiles</li>
+                        <li>✅ Priority Support</li>
+                    </ul>
+                    <button class="pricing-btn active">Subscribe Now</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>GOLD</h3>
+                    <p class="price">₹599<span>/month</span></p>
+                    <ul class="features-list">
+                        <li>✅ All Premium Features</li>
+                        <li>✅ Dedicated Matchmaker</li>
+                        <li>✅ Advance Filters</li>
+                        <li>✅ Video Consultation</li>
+                        <li>✅ VIP Support 24/7</li>
+                    </ul>
+                    <button class="pricing-btn">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our <span class="highlight">Members</span> Say</h2>
+
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration CTA -->
+    <section class="cta-section" id="register">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Soulmate?</h2>
+                <p>Join 10 Lakh+ Happy Members Today - It's Completely FREE!</p>
+                <div class="cta-buttons">
+                    <button class="btn-cta primary" onclick="openRegisterModal()">Register FREE Now</button>
+                    <button class="btn-cta secondary" onclick="alert('Video coming soon!')">Watch Success Video</button>
+                </div>
+                <p class="cta-small">✓ 100% Free Registration • ✓ 100% Verified Profiles • ✓ 100% Confidential</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">About Umair X Nafiya</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog & Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-btn">📱 Instagram</a>
+                        <a href="#" class="social-btn">👍 Facebook</a>
+                        <a href="#" class="social-btn">🐦 Twitter</a>
+                        <a href="#" class="social-btn">▶️ YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Umair X Nafiya. All Rights Reserved. | Made with ❤️ in Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Register -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Create Your Free Account</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option>I'm looking for a...</option>
+                    <option>Bride</option>
+                    <option>Groom</option>
+                </select>
+                <button type="submit" class="btn-submit">Create Account</button>
+            </form>
+            <p class="modal-note">Your information is 100% confidential</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
