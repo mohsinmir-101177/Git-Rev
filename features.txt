@@ -1,0 +1,10 @@
+interface
+elements
+design
+
+adding dark mode
+
+adding auto detech feature mode
+ 
+
+ net interface with diffrent features
